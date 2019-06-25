@@ -21,7 +21,7 @@
 
 MVC works both in server and client side development. MVC architecture: the user updates the controller, the controller manipulates the model, the model updates the view, and finally the user can see the view.
 
-Flux is used for building client-side web applications. It implements React's com-posable view components by utilizing a unidirectional data flow. 
+Flux is used for building client-side web applications. It implements React's com-posable view components by utilizing a unidirectional data flow.
 
 ## Throw vs Reject
 
@@ -29,9 +29,9 @@ Any time you are inside a promise callback, you can use `throw`. However, if you
 
 ## AJAX
 
-AJAX \(Asynchronous JavaScript and XML\) is to create asynchronous web applications. With AJAX, web applications can send data and retrieve from a server asynchronously in the background without the need to reload the entire page. 
+AJAX \(Asynchronous JavaScript and XML\) is to create asynchronous web applications. With AJAX, web applications can send data and retrieve from a server asynchronously in the background without the need to reload the entire page.
 
-The `XMLHttpReques`t API is frequently used for the asynchronous communication or these days, the `fetch` API. 
+The `XMLHttpReques`t API is frequently used for the asynchronous communication or these days, the `fetch` API.
 
 ## AJAX - pros & cons
 
@@ -51,19 +51,19 @@ Disadvantages:
 
 ## Cross Browser Compatibility Issues
 
-Since difference browser may require different API for the same functionality, you can easily use if - else statement to define which API should be used in which environment. If the API is not working with that browser, it will return undefined. 
+Since difference browser may require different API for the same functionality, you can easily use if - else statement to define which API should be used in which environment. If the API is not working with that browser, it will return undefined.
 
 ## Continuous Integration \(CI\)
 
-Continuous Integration is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early. 
+Continuous Integration is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early.
 
 ## Cross-Domain Solution \(CDS\)
 
-A cross-domain solution is a means of information assurance that provides the ability to manually or automatically access or transfer information between two or more differing security domains. 
+A cross-domain solution is a means of information assurance that provides the ability to manually or automatically access or transfer information between two or more differing security domains.
 
 ## Cross-Origin Resource Sharing \(CORS\)
 
-Cross-Origin Resource Sharing \(CORS\) is a mechanism that uses additional HTTP headers to tell a browser to let a web application running at one origin \(domain\) have permission to access selected resources from a server at a different origin. A web application executes a cross-origin HTTP request when it requests a resource that has a different origin \(domain, protocol, and port\) than its own origin. 
+Cross-Origin Resource Sharing \(CORS\) is a mechanism that uses additional HTTP headers to tell a browser to let a web application running at one origin \(domain\) have permission to access selected resources from a server at a different origin. A web application executes a cross-origin HTTP request when it requests a resource that has a different origin \(domain, protocol, and port\) than its own origin.
 
 ## 5 ways to reduce the page loading speed
 
@@ -75,22 +75,20 @@ Cross-Origin Resource Sharing \(CORS\) is a mechanism that uses additional HTTP 
 
 ## The workflow for JSON web token
 
-![](.gitbook/assets/image%20%284%29.png)
+![](https://github.com/yao2007/study-node/tree/3c6d34232e6101eff8213fdac978957736ea079c/.gitbook/assets/image%20%284%29.png)
 
 ## How do you parse JSON in backend
 
 use body-parser module
 
-## Microservices 
+## Microservices
 
-Microservices - also known as microservice architecture - is an architectural style that structures an application as a collection of services that are 
+Microservices - also known as microservice architecture - is an architectural style that structures an application as a collection of services that are
 
 * Highly maintainable and testable 
 * Loosely coupled
 * Independently deployable
 * Organized around business capabilities
 
-The microservice architecture enables the continuous delivery/deployment of large, complex applications. It also enables an organization to evolve its technology stack. 
-
-
+The microservice architecture enables the continuous delivery/deployment of large, complex applications. It also enables an organization to evolve its technology stack.
 

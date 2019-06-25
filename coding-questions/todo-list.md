@@ -257,7 +257,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 import React, { useState } from "react";
 
 const AddTodo = (props) => {
-  
+
   const [state, setState] = useState({ value: "" });
 
   const onChangeHandler = (e) => {
@@ -288,7 +288,7 @@ export default AddTodo;
 import React from "react";
 
 const Filter = (props) => {
-  
+
   const showAllHandler = () => {
     props.setFilter("All");
   }
@@ -422,7 +422,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 import React, { Component } from "react";
 
 class AddTodo extends Component {
-  
+
   state = { value: "" };
 
   onChangeHandler = (e) => {
@@ -455,7 +455,7 @@ export default AddTodo;
 import React from "react";
 
 const Filter = (props) => {
-  
+
   const showAllHandler = () => {
     props.setFilter("All");
   }

@@ -38,7 +38,7 @@ float: right
 
 ## Write some CSS code for 4 different screen types
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](https://github.com/yao2007/study-node/tree/3c6d34232e6101eff8213fdac978957736ea079c/.gitbook/assets/image%20%288%29.png)
 
 ```markup
 <h4>Question:
@@ -215,9 +215,9 @@ li a:hover {
 
 ## Using LESS to display the layout
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](https://github.com/yao2007/study-node/tree/3c6d34232e6101eff8213fdac978957736ea079c/.gitbook/assets/image%20%282%29.png)
 
-## Add animation to change the height 
+## Add animation to change the height
 
 ```css
 <style>
@@ -241,7 +241,7 @@ li a:hover {
 
 ## Implement the tooltip
 
-![](../.gitbook/assets/image%20%286%29.png)
+![](https://github.com/yao2007/study-node/tree/3c6d34232e6101eff8213fdac978957736ea079c/.gitbook/assets/image%20%286%29.png)
 
 ```markup
 <div class="tooltip">

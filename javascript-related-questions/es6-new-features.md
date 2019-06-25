@@ -8,7 +8,7 @@ class Human {
     constructor() {
         this.gender = "female";
     }
-    
+
     printGender() {
         console.log(this.gender);
     }
@@ -20,7 +20,7 @@ class Person extends Human {
         this.name = "Harry";
         this.gender = "male";
     }
-    
+
     printMyName() {
         console.log(this.name);
     }
@@ -33,7 +33,7 @@ person.printGender(); // "male"
 // ES7
 class Human {            
     gender = "female";           
-    
+
     printGender = () => {        
         console.log(this.gender);    
     }
@@ -42,7 +42,7 @@ class Human {
 class Person extends Human {           
     name = "Harry";        
     gender = "male";         
-    
+
     printMyName = () => {        
         console.log(this.name);    
     }

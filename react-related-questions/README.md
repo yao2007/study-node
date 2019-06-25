@@ -20,9 +20,9 @@ React builds up its own "virtual DOM" which is a lightweight representation of t
 * It's easy to test.
 * You can use React with any framework \(Backbone.js, Angular.js\) as it's only a view layer. 
 
-## React Lifecycle Methods 
+## React Lifecycle Methods
 
-Mounting 
+Mounting
 
 * constructor\(\)
 * static getDerivedStateFromProps\(\)
@@ -46,11 +46,11 @@ Error Handling
 * static getDerivedStateFromError\(\)
 * componentDidCatch\(\)
 
-![](../.gitbook/assets/image.png)
+![](https://github.com/yao2007/study-node/tree/3c6d34232e6101eff8213fdac978957736ea079c/.gitbook/assets/image.png)
 
 ## React - Redux Workflow
 
-![](../.gitbook/assets/image%20%289%29.png)
+![](https://github.com/yao2007/study-node/tree/3c6d34232e6101eff8213fdac978957736ea079c/.gitbook/assets/image%20%289%29.png)
 
 ## Toolchains -  contains package manager, bundler and compiler
 
@@ -60,7 +60,7 @@ Error Handling
 
 ## Redux vs setState\(\)
 
-Use Redux if your state is shared across multiple components. 
+Use Redux if your state is shared across multiple components.
 
 Use setState\(\) if it’s used only in a single component.
 
@@ -72,17 +72,17 @@ Use setState\(\) if it’s used only in a single component.
 
 ## Elements vs Components
 
-React elements are the building blocks of React applications. An element describes what you want to see on the screen. React elements are immutable. Typically, elements are not used directly, but get returned from components. 
+React elements are the building blocks of React applications. An element describes what you want to see on the screen. React elements are immutable. Typically, elements are not used directly, but get returned from components.
 
-React components are small, reusable pieces of code that return a React element to be rendered to the page. The simplest version of React component is a plain JavaScript function that returns a React element. 
+React components are small, reusable pieces of code that return a React element to be rendered to the page. The simplest version of React component is a plain JavaScript function that returns a React element.
 
 ## React Router
 
-React Router is the standard routing library for React. React Router keeps your UI in sync with the URL. It has a simple API with powerful features like lazy code loading, dynamic route matching, and location transition handling. 
+React Router is the standard routing library for React. React Router keeps your UI in sync with the URL. It has a simple API with powerful features like lazy code loading, dynamic route matching, and location transition handling.
 
 ## Synthetic Event
 
-Synthetic Event is a cross-browser wrapper around the browser's native event. It has the same interface as the browser's native event, including `stopPropagation()` and `preventDefault()`, except the events work identically across all browsers. 
+Synthetic Event is a cross-browser wrapper around the browser's native event. It has the same interface as the browser's native event, including `stopPropagation()` and `preventDefault()`, except the events work identically across all browsers.
 
 ## JSX
 
@@ -90,7 +90,7 @@ JSX is a syntax extension to JavaScript. It is similar to a template language, b
 
 ## Why JSX
 
-React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display. Instead of artificially separating technologies by putting markup and logic in separate files, React separates concerns with loosely coupled units called "components" that contain both. 
+React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display. Instead of artificially separating technologies by putting markup and logic in separate files, React separates concerns with loosely coupled units called "components" that contain both.
 
 ## Understanding JSX
 
@@ -111,16 +111,16 @@ return React.createElement("div", {className: "App"},
 
 In Angular, if you change the UI element, then the corresponding model state changes as well. Additionally, if you change the model state, then the UI element changes.
 
-In React, when the model state update, it will render the change in the UI element. However, if you change the UI element, the model state does not change. Any state is always owned by some specific component, and any data or UI derived from that state can only affect components below them in the tree. 
+In React, when the model state update, it will render the change in the UI element. However, if you change the UI element, the model state does not change. Any state is always owned by some specific component, and any data or UI derived from that state can only affect components below them in the tree.
 
-## Two Kinds of Applications 
+## Two Kinds of Applications
 
 | Single Page Applications | Multi Page Applications |
 | :--- | :--- |
 | Only ONE HTML Page, Content is \(re\)rendered on Client | Multiple HTML Pages, Content is rendered on Server. |
 | Typically only ONE ReactDOM.render\(\) call | One ReactDOM.render\(\) call per "widget" |
 
-## Server-Side Rendering - pros & cons 
+## Server-Side Rendering - pros & cons
 
 advantages:
 
@@ -151,37 +151,37 @@ disadvantages:
 
 ## PureComponent
 
-`React.PureComponent`is similar to `React.Component`. The difference between them is that `React.Component` doesn't implement `shouldComponentUpdate()`, but `React.PureComponent` implements it with a shallow prop and state comparison. 
+`React.PureComponent`is similar to `React.Component`. The difference between them is that `React.Component` doesn't implement `shouldComponentUpdate()`, but `React.PureComponent` implements it with a shallow prop and state comparison.
 
 ## React.memo
 
-`React.memo` is a higher order component. It's similar to `React.PureComponent` but for function components instead of classes. 
+`React.memo` is a higher order component. It's similar to `React.PureComponent` but for function components instead of classes.
 
-If your function component renders the same result given the same props, you can wrap it in a call to `React.memo` for a performance boost in some cases by memoizing the result. This means that React will skip rendering the component, and reuse the last rendered result. 
+If your function component renders the same result given the same props, you can wrap it in a call to `React.memo` for a performance boost in some cases by memoizing the result. This means that React will skip rendering the component, and reuse the last rendered result.
 
-By default it will only shallowly compare complex objects in the props object. If you want control over the comparison, you can also provide a custom comparison function as the second argument. 
+By default it will only shallowly compare complex objects in the props object. If you want control over the comparison, you can also provide a custom comparison function as the second argument.
 
-This method only exists as a performance optimization. 
+This method only exists as a performance optimization.
 
 ## React.Fragment
 
-The `React.Fragment` component lets you return multiple elements in a `render()` method without creating an additional DOM element. You can also use it with the shorthand `<></>`syntax. 
+The `React.Fragment` component lets you return multiple elements in a `render()` method without creating an additional DOM element. You can also use it with the shorthand `<></>`syntax.
 
 ## React.lazy
 
-`React.lazy()` lets you define a component that is loaded dynamically. This helps reduce the bundle size to delay loading components that aren't used during the initial render. 
+`React.lazy()` lets you define a component that is loaded dynamically. This helps reduce the bundle size to delay loading components that aren't used during the initial render.
 
 [React.lazy & Suspense Code Sample](sample-code.md#react-lazy)
 
 ## Suspense
 
-The suspense component shows the fallback content while you are waiting for the child components to load when the parent component renders. 
+The suspense component shows the fallback content while you are waiting for the child components to load when the parent component renders.
 
 ## Why need super\(props\)
 
 If you don't initialize state and you don't bind methods, you don't need to implement the constructor for your React component.
 
-The constructor for a React component is called before it is mounted. When implementing the constructor for a React.component subclass, you should call super\(props\) before any other statement. Otherwise, `this.props` will be undefined in the constructor, which can lead to bugs. 
+The constructor for a React component is called before it is mounted. When implementing the constructor for a React.component subclass, you should call super\(props\) before any other statement. Otherwise, `this.props` will be undefined in the constructor, which can lead to bugs.
 
 ## How to re-render out of Lifecycle
 
@@ -201,7 +201,7 @@ The React App sends the Auth to the server, and then the server sends back a Tok
 
 Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed. Error boundaries catch errors during rendering, in lifecycle methods, and in constructors of the whole tree below them.
 
-A class component becomes an error boundary if it defines either \(or both\) of the lifecycle methods `static getDerivedStateFromError()` or `componentDidCatch()`. Use `static getDerivedStateFromError()` to render a fallback UI after an error has been thrown. Use `componentDidCatch()` to log error information. 
+A class component becomes an error boundary if it defines either \(or both\) of the lifecycle methods `static getDerivedStateFromError()` or `componentDidCatch()`. Use `static getDerivedStateFromError()` to render a fallback UI after an error has been thrown. Use `componentDidCatch()` to log error information.
 
 Error Boundary does not catch errors for:
 
@@ -216,7 +216,7 @@ Errors that were not caught by any error boundary will result in unmounting of t
 
 ## Composition vs inheritance in React
 
-React has a powerful composition model, and composition is recommended instead of inheritance to reuse code between components. 
+React has a powerful composition model, and composition is recommended instead of inheritance to reuse code between components.
 
 ## Rendering Multiple Components
 
@@ -226,7 +226,7 @@ React has a powerful composition model, and composition is recommended instead o
 
 ## Keys
 
-A "key" is a special string attribute you need to include when creating arrays of elements. Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside an array to give the elements a stable identity. 
+A "key" is a special string attribute you need to include when creating arrays of elements. Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside an array to give the elements a stable identity.
 
 ## Where in a React component should you make an AJAX request?
 
@@ -234,11 +234,11 @@ componentDidMount
 
 ## Controlled Component vs Uncontrolled Component
 
-An input form element whose value is controlled by React is called a controlled component. When a user enters data into a controlled component a change event handler is triggered and your code decides whether the input is valid \(by re-rendering with the updated value\). If you do not re-render then the form element will remain unchanged. 
+An input form element whose value is controlled by React is called a controlled component. When a user enters data into a controlled component a change event handler is triggered and your code decides whether the input is valid \(by re-rendering with the updated value\). If you do not re-render then the form element will remain unchanged.
 
 An uncontrolled component works like form elements do outside of React. When a user inputs data into a form field \(an input box, dropdown, etc\) the updated information is reflected without React needing to do anything. However, this also means that you can't force the field to have a certain value.
 
-In most cases you should use controlled components. 
+In most cases you should use controlled components.
 
 [Controlled Components Code Sample](sample-code.md#controlled-component)
 
@@ -248,21 +248,21 @@ A single-page application is an application that loads a single HTML page and al
 
 ## Refs
 
-React supports a special attribute that you can attach to any component. The ref attribute can be an object created by `React.createRef()`function or a callback function. When the ref attribute is a callback function, the function receives the underlying DOM element or class instance as its argument. This allows you to have direct access to the DOM element or component instance. 
+React supports a special attribute that you can attach to any component. The ref attribute can be an object created by `React.createRef()`function or a callback function. When the ref attribute is a callback function, the function receives the underlying DOM element or class instance as its argument. This allows you to have direct access to the DOM element or component instance.
 
 ## Refs vs document.getElementsById\(\)
 
-By using Refs, you can create reusable component as much as you want. 
+By using Refs, you can create reusable component as much as you want.
 
 ## Forwarding Refs
 
-Ref forwarding is a technique for automatically passing a ref through a component to one of its children. This is typically not necessary for most components in the application. However, it can be useful for some kinds of components, especially in reusable component libraries. 
+Ref forwarding is a technique for automatically passing a ref through a component to one of its children. This is typically not necessary for most components in the application. However, it can be useful for some kinds of components, especially in reusable component libraries.
 
 ## Portals
 
 Portals provide a first-class way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.
 
-A typical use case for portals is when a parent component has an `overflow: hidden` or `z-index` style, but you need the child to visually " break out" of its container. 
+A typical use case for portals is when a parent component has an `overflow: hidden` or `z-index` style, but you need the child to visually " break out" of its container.
 
 ## Higher Order Component
 
@@ -287,7 +287,7 @@ Since this.props and this.state may be updated asynchronously, you should not re
 
 ## How to access the underlying DOM component
 
-When the ref attribute is used on an HTML element, the ref created in the constructor with React.createRef\(\) receives the underlying DOM element as its current property. 
+When the ref attribute is used on an HTML element, the ref created in the constructor with React.createRef\(\) receives the underlying DOM element as its current property.
 
 ## Why would you eject from create-react-app
 
@@ -295,29 +295,29 @@ Until you eject you are unable to configure web-pack or babel presets.
 
 ## Props vs State
 
-`Props` are inputs to a React component. They are data passed down from a parent component to a child component. Props are read only. 
+`Props` are inputs to a React component. They are data passed down from a parent component to a child component. Props are read only.
 
-`State` is an internal object for a particular react component and can change, as it determines the state of the component. It's not visible to other components.  
+`State` is an internal object for a particular react component and can change, as it determines the state of the component. It's not visible to other components.
 
 `props.children` contains the content between the opening and closing tags of a component.
 
-only changes in `props` and/or `state` trigger React to re-render the components and potentially update the DOM in the browser. 
+only changes in `props` and/or `state` trigger React to re-render the components and potentially update the DOM in the browser.
 
 ## Pure Component
 
-A pure \(functional\) component in React is stateless \(like a dumb component\) and always renders the same given the same set of input props. 
+A pure \(functional\) component in React is stateless \(like a dumb component\) and always renders the same given the same set of input props.
 
-## Pure Functional Component 
+## Pure Functional Component
 
-A component that has no internal state of its own, nor any side effects, and thus is often written as a function as opposed to an ES6 class. 
+A component that has no internal state of its own, nor any side effects, and thus is often written as a function as opposed to an ES6 class.
 
 ## Why need render method
 
-To determine what should be rendered for a particular component. Could be a complex nested object of other child React components, or it could be as simple as a primitive JavaScript object. 
+To determine what should be rendered for a particular component. Could be a complex nested object of other child React components, or it could be as simple as a primitive JavaScript object.
 
 ## PropTypes
 
-They help indicate to React what data types a React component's properties are and should accept. 
+They help indicate to React what data types a React component's properties are and should accept.
 
 [PropTypes Sample Code](sample-code.md#context-and-ref-and-fragment)
 
@@ -332,22 +332,22 @@ They help indicate to React what data types a React component's properties are a
 * The Power Of Not Mutating Data
 * Using Immutable Data Structures 
 
-## Reconciliation 
+## Reconciliation
 
-When a component's props or state change, React decides whether an actual DOM update is necessary by comparing the newly returned element with the previously rendered one. When they are not equal, React will update the DOM. This process is called Reconciliation. 
+When a component's props or state change, React decides whether an actual DOM update is necessary by comparing the newly returned element with the previously rendered one. When they are not equal, React will update the DOM. This process is called Reconciliation.
 
 ## The Diffing Algorithm
 
-When diffing two trees, React first compares the two root elements. The behavior is different depending on the types of the root elements. 
+When diffing two trees, React first compares the two root elements. The behavior is different depending on the types of the root elements.
 
-React implements a heuristic O\(n\) algorithm based on two assumptions: 
+React implements a heuristic O\(n\) algorithm based on two assumptions:
 
 * Two elements of different types will produce different trees
 * The developer can hint at which child elements may be stable across different renders with a key prop.
 
 ## Shadow DOM
 
-The Shadow DOM is a browser technology designed primarily for scoping variables and CSS in web components. 
+The Shadow DOM is a browser technology designed primarily for scoping variables and CSS in web components.
 
 ## React Fiber
 
@@ -355,7 +355,7 @@ Fiber is new reconciliation engine in React 16. Its main goal is to enable incre
 
 ## Framework vs Library
 
-The key difference between a library and a framework is "Inversion of Control". When you call a method from a library, you are in control. However, with a framework, the control is inverted: the framework calls you. A library is just a collection of class definitions. 
+The key difference between a library and a framework is "Inversion of Control". When you call a method from a library, you are in control. However, with a framework, the control is inverted: the framework calls you. A library is just a collection of class definitions.
 
 ## Steps for building React Project
 
@@ -373,11 +373,11 @@ A JavaScript compiler takes JavaScript code, transforms it and returns JavaScrip
 
 ## Bundlers - Webpack & Browserify
 
-Bundlers take JavaScript and CSS code written as separate modules, and combine them together into a few files better optimized for the browsers. 
+Bundlers take JavaScript and CSS code written as separate modules, and combine them together into a few files better optimized for the browsers.
 
 ## Package Managers - NPM & Yarn
 
-Package managers are tools that allow you to manager dependencies in your project. 
+Package managers are tools that allow you to manager dependencies in your project.
 
 ## Accessibility
 
@@ -400,60 +400,4 @@ StrictMode is a tool for highlighting potential problems in an application:
 ## Test method
 
 Jest and Enzyme
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

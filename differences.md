@@ -25,7 +25,7 @@
 | :--- | :--- |
 | table based | document based |
 | predefined schema | dynamic schema |
-| use sql  | use unql |
+| use sql | use unql |
 | good fit for complex query | don't have standard interfaces |
 
 ## Element vs Component
@@ -36,7 +36,7 @@
 
 ## Component vs Pure Component
 
-| Component  | Pure Component |
+| Component | Pure Component |
 | :--- | :--- |
 |  | implement shouldComponentUpdate\(\) with shallow props and state comparison |
 
@@ -79,9 +79,9 @@
 | library | pattern |
 | implemented based on flux |  |
 
-## Parameter vs Argument 
+## Parameter vs Argument
 
-| Parameter  | Argument |
+| Parameter | Argument |
 | :--- | :--- |
 | a variable in a method definition | the data you pass into the method's parameters when a method is called |
 | variable in the declaration of function | the actual value of this variable that gets passed to function |

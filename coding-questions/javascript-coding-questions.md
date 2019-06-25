@@ -8,9 +8,9 @@ Array.prototype.double = function() {
 }
 ```
 
-## Given an array with integer and K, return top K largest element in the array 
+## Given an array with integer and K, return top K largest element in the array
 
-## Write a function to find the most repeated number in the array 
+## Write a function to find the most repeated number in the array
 
 ```javascript
 const findMost = (arr) => {
@@ -34,7 +34,7 @@ const findMost = (arr) => {
     }
   }
   return mostNum;
-} 
+}
 ```
 
 ## Write a function that sum\(2\)\(3\), sum\(2, 3\) will all return 5
@@ -191,7 +191,7 @@ test.map(e => e = {...e, {age: 24}});
 4  5 | 5  2 | 6   ->  6   answer: 6
 4  5  5 | 2 | 6   ->  2       
 
-// Leetcode 410   
+// Leetcode 410
 ```
 
 ## Write a function, which passing an ID would return the options for that ID
@@ -276,7 +276,7 @@ Array.prototype.myMap = function(callback) {
 };
 ```
 
-## Implement the filter function 
+## Implement the filter function
 
 ```javascript
 Array.prototype.myFilter = function(callback, context) {
@@ -323,7 +323,7 @@ const arrange = (sentence) => {
   }
   let new_arr = [...map];
   new_arr.sort((a,b) => a[0] - b[0]);
-  
+
   let result = "";
   new_arr[0][1][0] = new_arr[0][1][0].charAt(0).toUpperCase() + new_arr[0][1][0].slice(1);
   for(let i = 0; i < new_arr.length; i++){
@@ -361,17 +361,17 @@ class Calc {
     constructor(value) {
         this.value = value;
     }
-    
+
     add(value) {
         this.value += value;
         return this;
     }
-    
+
     multiple(value) {
         this.value *= value;
         return this;
     }
-    
+
     getValue() {
         return this.value;
     }
@@ -518,7 +518,6 @@ const solution = () => {
 ## Write a function that given a DOM tree representing an HTML document, returns a string containing all visible letters, read in row-major order.
 
 ```javascript
-
     let res = "";
     $("td").each(function() {
         if ($(this).css("color") !== $(this).css("background-color")) {
@@ -543,7 +542,7 @@ class CountMe {
             this.map.set(str, 1);
         }
     }
-    
+
     get(str) {
         if (this.map.has(str)) {
             return this.map.get(str);
@@ -551,7 +550,7 @@ class CountMe {
             return 0;
         }
     }
-    
+
     delete(str) {
         if (this.map.has(str)) {
             this.map.set(str, this.map.get(str) - 1);
@@ -850,11 +849,11 @@ $(document).ready( function() {
 
   for( var i = 0; i < buttons.length; ++i ) {
     buttons.eq(i).click(
-    	// ONLY EDIT THE CODE BELOW THIS LINE
-    	function() {
-      	$('ul').append('<li>' + i + '</li>')
-    	}
-    	// ONLY EDIT THE CODE ABOVE THIS LINE
+        // ONLY EDIT THE CODE BELOW THIS LINE
+        function() {
+          $('ul').append('<li>' + i + '</li>')
+        }
+        // ONLY EDIT THE CODE ABOVE THIS LINE
     );
   }
 });
@@ -866,11 +865,11 @@ $(document).ready( function() {
 
   for( var i = 0; i < buttons.length; ++i ) {
     buttons.eq(i).click(
-    	// ONLY EDIT THE CODE BELOW THIS LINE
-    	(function(num) {
-      	return () => $('ul').append('<li>' + num + '</li>')
-    	})(i)
-    	// ONLY EDIT THE CODE ABOVE THIS LINE
+        // ONLY EDIT THE CODE BELOW THIS LINE
+        (function(num) {
+          return () => $('ul').append('<li>' + num + '</li>')
+        })(i)
+        // ONLY EDIT THE CODE ABOVE THIS LINE
     );
   }
 });

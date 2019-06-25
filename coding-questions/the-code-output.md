@@ -18,7 +18,7 @@ function makeMultiplier(multiplier) {
   var myFunFunc = function (x) {
     return multiplier * x;
   };
-  
+
   return myFunFunc;
 }
 
@@ -53,7 +53,7 @@ console.log(myCircleDirectCall.getArea());
 // myCircleDirectCall.getArea() fails with error
 ```
 
-## What is the output of this code 
+## What is the output of this code
 
 ```javascript
 var counter = 0;
@@ -95,7 +95,7 @@ console.log("DirectAccess: " +
         myLiteralObj.getSeniorStatusThroDirectAccess());
 console.log("Through gettor: " +
         myLiteralObj.getSeniorStatusThroGettor());
-        
+
 // answer: Output is “DirectAccess: Not Senior”  
 // followed by “Through gettor: Senior”
 ```
@@ -106,15 +106,15 @@ console.log("Through gettor: " +
 (function(window) {
 
   var obj = {};
-  
+
   obj.dreamOn = function () {
     console.log("I want to see the global scope! Let me out!");
   };
-  
+
   window.doer = obj;
-  
+
  });
- 
+
 doer.dreamOn();
 
 // answer: The attempted Immediately Invoked Function Execution (IIFE) is not being 
@@ -186,20 +186,20 @@ for (var i = 0; i < arr.length; i++) {
 
 ```javascript
 for (var i = 0; i< 5; i++) {
-	setTimeout(() => console.log(i)); // 5 5 5 5 5
+    setTimeout(() => console.log(i)); // 5 5 5 5 5
 }
 
 for (var i = 0; i< 5; i++) {
-	setTimeout(() => console.log(i)); // 5 5 5 5 5 
+    setTimeout(() => console.log(i)); // 5 5 5 5 5 
 }
 setTimeout(() => console.log(i)); // 5
 
 for (let i = 0; i< 5; i++) {
-	setTimeout(() => console.log(i)); // 0 1 2 3 4
+    setTimeout(() => console.log(i)); // 0 1 2 3 4
 }
 
 for (let i = 0; i< 5; i++) {
-	setTimeout(() => console.log(i)); // 0 1 2 3 4
+    setTimeout(() => console.log(i)); // 0 1 2 3 4
 }
 setTimeout(() => console.log(i)); // ERROR: i is not defined
 ```
@@ -323,7 +323,7 @@ myObject.func();
 ```javascript
 var length = 10;
 function fn() {
-	console.log(this.length);
+    console.log(this.length);
 }
 
 var obj = {
@@ -369,7 +369,7 @@ girl ();
 const {
   a: aa,
   b: bb
-} = {	
+} = {    
   aa: "a",
   a: "test",
   b: "bb",

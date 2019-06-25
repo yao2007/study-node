@@ -14,7 +14,7 @@ Cascading Style Sheets \(CSS\) is a style sheet language used for describing the
 
 ## Box Model
 
-All HTML elements can be considered as boxes. In CSS, the term box model is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of **margin, border, padding and context**. 
+All HTML elements can be considered as boxes. In CSS, the term box model is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of **margin, border, padding and context**.
 
 ## Position
 
@@ -41,13 +41,13 @@ All HTML elements can be considered as boxes. In CSS, the term box model is used
 
 Display: none - means that the tag will not appear on the page at all, although you can still interact with it through the DOM. There will be no space allocated for it between the other tags.
 
-Visibility: hidden - means that unlike display: none, the tag is not visible, but space is allocated for it on the page. The tag is rendered, it just isn't seen on the page. 
+Visibility: hidden - means that unlike display: none, the tag is not visible, but space is allocated for it on the page. The tag is rendered, it just isn't seen on the page.
 
 ## CSS Selectors
 
-![](.gitbook/assets/image%20%2810%29.png)
+![](https://github.com/yao2007/study-node/tree/3c6d34232e6101eff8213fdac978957736ea079c/.gitbook/assets/image%20%2810%29.png)
 
-![](.gitbook/assets/image%20%2814%29.png)
+![](https://github.com/yao2007/study-node/tree/3c6d34232e6101eff8213fdac978957736ea079c/.gitbook/assets/image%20%2814%29.png)
 
 ## Specificity Rules
 
@@ -66,9 +66,9 @@ inline style &gt; ID selector &gt; class, attribute and pseudo-class selector &g
 * Flexbox 
   * Need a container with attributes display: flex, flex-direction: column/row\(-reserve\), flex-wrap: \(no\)wrap\(-reverse\), flex-flow: setting both the flex-direction and flex-wrap
 
-## Media Query 
+## Media Query
 
-It uses the @media rule to include a block of CSS properties only if a certain condition is true. In order to implement Responsive Design to adapt different screen. 
+It uses the @media rule to include a block of CSS properties only if a certain condition is true. In order to implement Responsive Design to adapt different screen.
 
 ## CSS Grid vs Flex-box
 
@@ -77,11 +77,11 @@ It uses the @media rule to include a block of CSS properties only if a certain c
 * Flex-box layout is most appropriate to the components of an application and small-scale layouts, while the Grid layout is intended for larger scale layouts which aren't linear in their design
 * Flex-box is for defining a layout as a row or a column, whereas Grid is for defining a grid and fit content into it in two-dimensions
 
-Shorthand for using Flex-box: performance issues and browser compatibility. 
+Shorthand for using Flex-box: performance issues and browser compatibility.
 
 ## Animation vs Transition
 
-Animations within CSS3 allow the appearance and behavior of an element to be altered in multiple keyframes. Transitions provide a change from one state to another, while animations can set multiple points of transition upon different keyframes. 
+Animations within CSS3 allow the appearance and behavior of an element to be altered in multiple keyframes. Transitions provide a change from one state to another, while animations can set multiple points of transition upon different keyframes.
 
 ## Pseudo Class
 
@@ -95,7 +95,7 @@ A CSS pseudo-element is a keyword added to a selector that lets you style a spec
 
 ## CSS Preprocessors - pros & cons
 
-Advantages: 
+Advantages:
 
 * CSS is made more maintainable
 * Easy to write nested selectors
@@ -109,11 +109,11 @@ Disadvantages:
 
 ## Mixin in SASS / SCSS
 
-A mixin lets you make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixin more flexible. A good use of a mixin is for vendor prefixes. 
+A mixin lets you make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixin more flexible. A good use of a mixin is for vendor prefixes.
 
 ## Z-index
 
-The z-index property specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order. z-index only works on positioned elements. 
+The z-index property specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order. z-index only works on positioned elements.
 
 ## How to add a padding but not influence the box size
 

@@ -4,6 +4,7 @@
 * [HTML](html-related-questions.md)
 * [CSS](css-related-questions.md)
 * [JavaScript](javascript-related-questions/README.md)
+  * [Array Map Set](javascript-related-questions/array-map-set.md)
   * [ES6 New Features](javascript-related-questions/es6-new-features.md)
 * [React](react-related-questions/README.md)
   * [React Lifecycle](react-related-questions/react-lifecycle.md)

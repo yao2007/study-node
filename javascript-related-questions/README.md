@@ -16,7 +16,7 @@ JavaScript is a high-level, interpreted programming language.
 
 ## How JavaScript work
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](https://github.com/yao2007/study-node/tree/3c6d34232e6101eff8213fdac978957736ea079c/.gitbook/assets/image%20%2811%29.png)
 
 ## Shallow Comparison Check
 
@@ -24,13 +24,13 @@ The shallow comparison check means that JavaScript only checks that the value's 
 
 ## Hoisting
 
-Hoisting is a term used to explain the behavior of variable declarations in your code. Variables declared or initialized with the `var` keyword will have their declaration "moved" up to the top of the current scope. 
+Hoisting is a term used to explain the behavior of variable declarations in your code. Variables declared or initialized with the `var` keyword will have their declaration "moved" up to the top of the current scope.
 
-However, only the variable declarations and function declarations are hoisted. Variable assignments and function expressions are not hoisted. 
+However, only the variable declarations and function declarations are hoisted. Variable assignments and function expressions are not hoisted.
 
 ## Closure
 
-A closure is an inner function that has access to the variables in the outer \(enclosing\) function's scope chain.  Closure is a function that returns a function. It gives the access to an outer function's scope from an inner function. To use the closure, simply define a function inside another function and return it or pass it to another function. 
+A closure is an inner function that has access to the variables in the outer \(enclosing\) function's scope chain. Closure is a function that returns a function. It gives the access to an outer function's scope from an inner function. To use the closure, simply define a function inside another function and return it or pass it to another function.
 
 The closure has access to variables in three scopes
 
@@ -42,15 +42,15 @@ We can use Closure to declare a private variable.
 
 ## Higher-Order Function
 
-A higher-order function is any function that takes one or more functions as arguments, which it uses to operate on some data, and/or returns a function as a result. Higher-order functions are meant to abstract some operation that is performed repeatedly. e.g.`map`, `forEach`, `filter`, `reduce`, `bind`. 
+A higher-order function is any function that takes one or more functions as arguments, which it uses to operate on some data, and/or returns a function as a result. Higher-order functions are meant to abstract some operation that is performed repeatedly. e.g.`map`, `forEach`, `filter`, `reduce`, `bind`.
 
 ## Currying
 
-Currying is a pattern where a function with more than one parameter is broken into multiple functions that, when called in series, will accumulate all of the required parameters one at a time. This technique can be useful for making code written in functional style easier to read and compose. It's important to node that for a function be curried, it needs to start out as one function, then broken out into a sequence of functions that each accepts one parameter. 
+Currying is a pattern where a function with more than one parameter is broken into multiple functions that, when called in series, will accumulate all of the required parameters one at a time. This technique can be useful for making code written in functional style easier to read and compose. It's important to node that for a function be curried, it needs to start out as one function, then broken out into a sequence of functions that each accepts one parameter.
 
 ## `this` in JavaScript
 
-The value of `this` depends on how the function is called. 
+The value of `this` depends on how the function is called.
 
 The following rules are applied:
 
@@ -63,9 +63,9 @@ The following rules are applied:
 
 ## Window vs Document
 
-`window` is the main JavaScript object root, like the global object in the browser, also can be treated as the root of the DOM. 
+`window` is the main JavaScript object root, like the global object in the browser, also can be treated as the root of the DOM.
 
-`document` is the main object of the rendered DOM. 
+`document` is the main object of the rendered DOM.
 
 ## Falsey Values
 
@@ -86,19 +86,19 @@ The following rules are applied:
 
 ## Prototypal Inheritance
 
-All JavaScript objects have a prototype property, that is a reference to another object. When a property is accessed on an object and if the property is not found on that object, the JavaScript engine looks at the object's prototype, and the prototype's prototype and so on, until it finds the property defined on one of the prototypes or until it reaches the end of the prototype chain. This behavior simulates classical inheritance, but it is really more of delegation than inheritance. 
+All JavaScript objects have a prototype property, that is a reference to another object. When a property is accessed on an object and if the property is not found on that object, the JavaScript engine looks at the object's prototype, and the prototype's prototype and so on, until it finds the property defined on one of the prototypes or until it reaches the end of the prototype chain. This behavior simulates classical inheritance, but it is really more of delegation than inheritance.
 
 ## Classical inheritance vs Prototypal inheritance
 
 classical inheritance: a description of the object to be created. Classes inherit from classes and create subclass relationships.
 
-prototypal inheritance: a prototype is a working object instance. Objects inherit directly from other objects. 
+prototypal inheritance: a prototype is a working object instance. Objects inherit directly from other objects.
 
 ## `null` vs `undefined`
 
-A variable that is `undefined` is a a variable that has been declared, but not assigned a value. It is of type `undefined`. 
+A variable that is `undefined` is a a variable that has been declared, but not assigned a value. It is of type `undefined`.
 
-A variable that is `null` will have been explicitly assigned to the `null` value. It represents no value and is different from `undefined` in the sense that it has been explicitly assigned. It is of type `object`. 
+A variable that is `null` will have been explicitly assigned to the `null` value. It represents no value and is different from `undefined` in the sense that it has been explicitly assigned. It is of type `object`.
 
 `undefined == null // true`
 
@@ -107,7 +107,7 @@ A variable that is `null` will have been explicitly assigned to the `null` value
 * Object\(\) constructor 
 
 ```javascript
-const obj = new Object(); 
+const obj = new Object();
 ```
 
 * Object.create\(\) 
@@ -196,7 +196,7 @@ A callback function is a function passed into another function as an argument, w
 
 ## Callback Hell
 
-Callback Hell is referred to the problems caused by asynchronous AJAX calls, which means where are multiple nested callbacks. 
+Callback Hell is referred to the problems caused by asynchronous AJAX calls, which means where are multiple nested callbacks.
 
 ### How to fix:
 
@@ -211,9 +211,9 @@ Callback Hell is referred to the problems caused by asynchronous AJAX calls, whi
 * Fetch
 * Axios
 
-## Fetch 
+## Fetch
 
-A Fetch API provides a fetch method defined on a window object, which you can use to perform requests and sent it to the server. This method returns a Promise that you can use to retrieve the response of the request. 
+A Fetch API provides a fetch method defined on a window object, which you can use to perform requests and sent it to the server. This method returns a Promise that you can use to retrieve the response of the request.
 
 ## Null process
 
@@ -226,19 +226,19 @@ A null process - which takes its name from the concept of null pointers - is wha
 | BFS visit nodes level by level in Graph | DFS visit nodes of graph depth wise. It visits nodes until reach a leaf or a node which doesn't have non-visited nodes |
 | A node is fully explored before any other can begin | Exploration of a node is suspended as soon as another unexplored is found |
 | Uses Queue data structure to store un-explored nodes | Uses Stack data structure to store un-explored nodes |
-| BFS is slower and require more memory | DFS is faster and require less memory  |
+| BFS is slower and require more memory | DFS is faster and require less memory |
 
 ## Event Loop
 
-The event loop is a single-threaded loop that monitors the call stack and checks if there is any work to be done in the task queue. If the call stack is empty and there are callback functions in the tack queue, a function is dequeued and pushed onto the call stack to be executed. 
+The event loop is a single-threaded loop that monitors the call stack and checks if there is any work to be done in the task queue. If the call stack is empty and there are callback functions in the tack queue, a function is dequeued and pushed onto the call stack to be executed.
 
 ## Event Bubbling
 
-When an event triggers on a DOM element, it will attempt to handle the vent if there is a listener attached, then the event is bubbled up to its parent and the same thing happens. The bubbling occurs up the element's ancestors all the way to the document. Event bubbling is the mechanism behind event delegation. 
+When an event triggers on a DOM element, it will attempt to handle the vent if there is a listener attached, then the event is bubbled up to its parent and the same thing happens. The bubbling occurs up the element's ancestors all the way to the document. Event bubbling is the mechanism behind event delegation.
 
 ## Event Delegation
 
-Event delegation is a technique involving adding event listeners to a parent element instead of adding them to the descendant elements. The listener will fire whenever the event is triggered on the descendant elements due to event bubbling up the DOM. 
+Event delegation is a technique involving adding event listeners to a parent element instead of adding them to the descendant elements. The listener will fire whenever the event is triggered on the descendant elements due to event bubbling up the DOM.
 
 The benefits of this technique are:
 
@@ -257,9 +257,9 @@ e.stopPropagation\(\)
 
 ## `setTimeout` and `setInterval`
 
-setTimeout sets a timer which executes a function or specified piece of code once after the timer  expires.
+setTimeout sets a timer which executes a function or specified piece of code once after the timer expires.
 
-setInterval repeatedly calls a function or executes a code snippet, with a fixed time delay between each call. 
+setInterval repeatedly calls a function or executes a code snippet, with a fixed time delay between each call.
 
 ## `setImmediate` vs `process.nextTick`
 
@@ -269,33 +269,33 @@ setImmediate fires on the following iteration or "tick" of the event loop.
 
 ## `new` vs `Object.create`
 
-`new` is `Object.create` with additionally running the `constructor` function. And giving the `constructor` the chance to `return` the actual object that should be the result of the expression instead of `this`. 
+`new` is `Object.create` with additionally running the `constructor` function. And giving the `constructor` the chance to `return` the actual object that should be the result of the expression instead of `this`.
 
 ## Lexical Scope
 
-Lexical scope, also known as static scope, is a convention that sets the scope of a variable so that it may only be called from within the block of code in which it is defined. The scope is determined when the code is compiled. 
+Lexical scope, also known as static scope, is a convention that sets the scope of a variable so that it may only be called from within the block of code in which it is defined. The scope is determined when the code is compiled.
 
 ## Bind
 
-The `bind` method creates a new function that, when called, has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called. 
+The `bind` method creates a new function that, when called, has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
 
 ## `Call` vs `Apply`
 
-Both are used to invoke functions and the first parameter will be used as the value of `this` within the function. However, `call` takes in comma-separated arguments as the next arguments while `apply` takes in an array of arguments as the next argument. 
+Both are used to invoke functions and the first parameter will be used as the value of `this` within the function. However, `call` takes in comma-separated arguments as the next arguments while `apply` takes in an array of arguments as the next argument.
 
 ## `Map` vs `forEach`
 
-`forEach`: parameter is a function, apply the function to each item. It modifies the original array. 
+`forEach`: parameter is a function, apply the function to each item. It modifies the original array.
 
-`map`: apply the function to all elements,  function has two parameters, first is value, second is index. It returns a new array, the original array is not modified. 
+`map`: apply the function to all elements, function has two parameters, first is value, second is index. It returns a new array, the original array is not modified.
 
 ## Event-Driven Programming
 
-event-driven programming a programming paradigm in which the flow of the program is determined by events such as user actions, sensor outputs, or messages from other programs or threads. 
+event-driven programming a programming paradigm in which the flow of the program is determined by events such as user actions, sensor outputs, or messages from other programs or threads.
 
 ## Why Arrow Function is Convenient
 
-Since the arrow function offers a very clean concise syntax and more intuitive scope and `this` binding. 
+Since the arrow function offers a very clean concise syntax and more intuitive scope and `this` binding.
 
 ## Using Promises instead of Callbacks - pros & cons
 
@@ -324,7 +324,7 @@ cons:
 
 Object.freeze\(\)
 
-## Strict Mode - pros & cons 
+## Strict Mode - pros & cons
 
 "use strict" is a statement used to enable strict mode to entire scripts or individual functions. Strict mode is a way to opt into a restricted variant of JavaScript.
 
@@ -346,7 +346,7 @@ disadvantages
 
 ## What is module and how do you use that
 
-A module is a separated part of a program. It helps developers to separate functionality and organize the codebase by using export and import. 
+A module is a separated part of a program. It helps developers to separate functionality and organize the codebase by using export and import.
 
 ## How to make JavaScript Multi-thread
 
@@ -394,5 +394,5 @@ On the server \(Node.js\), Each file is treated as a module and it can export va
 
 ## Test Method
 
-Jasmine 
+Jasmine
 

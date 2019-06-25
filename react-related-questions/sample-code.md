@@ -12,7 +12,7 @@ class App extends Component {
             {name: "Harry", age: 24}
         ]
     };
-    
+
     switchNameHandler = (newName) => {
         this.setState({
             person: [
@@ -20,7 +20,7 @@ class App extends Component {
             ]
         });
     };
-    
+
     nameChangedHandler = (event) => {
         this.setState({
             person: [
@@ -28,7 +28,7 @@ class App extends Component {
             ]
         });
     };
-    
+
     render() {
         return (
             <div className="App"> 
@@ -68,7 +68,7 @@ const person = (props) => {
 export default person;
 ```
 
-## Three way to handle events 
+## Three way to handle events
 
 * Bind this in the constructor
 
@@ -98,7 +98,7 @@ render() {
 }
 ```
 
-## ErrorBoundary 
+## ErrorBoundary
 
 ```jsx
 // must wrap the code you want to test using high order components 
@@ -109,7 +109,7 @@ class ErrorBoundary extends Component {
     hasError: false,
     errorMessage: ''
   }
-  
+
   static getDerivedStateFromError(error) {
     // update state so the next render will show the fallback UI.
     return { hasError: true };
@@ -304,12 +304,12 @@ class Form extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.input = React.createRef();
     }
-    
+
     handleSubmit(event) {
         event.preventDefault();
         console.log(this.input.current.value);
     }
-    
+
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
@@ -325,7 +325,7 @@ class Form extends React.Component {
 
 ## React Lazy & Suspense
 
-`React.lazy` takes a function that must call a dynamic `import()`. This must return a `Promise` which resolves to a module with a default export containing a React component. 
+`React.lazy` takes a function that must call a dynamic `import()`. This must return a `Promise` which resolves to a module with a default export containing a React component.
 
 ```jsx
 const MyComponent = React.lazy(() => import("./myComponent"));
@@ -353,7 +353,7 @@ class Person extends Component {
     super(props);
     this.inputElementRef = React.createRef();
   }
-  
+
   // creates a Context object. When React renders a component
   // that subscribes to this Context object it will read the 
   // current context value from the closest matching Provider
@@ -430,7 +430,7 @@ const FancyButton = React.forwardRef((props, ref) => (
 ));
 ```
 
-## Portals 
+## Portals
 
 ```jsx
 render() {

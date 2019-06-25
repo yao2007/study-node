@@ -18,7 +18,7 @@ export default class LikeDislike extends Component {
       isLike: false,
       isDislike: false
   };
-  
+
   like = () => {
     if (this.state.isLike){
       this.setState({
@@ -41,7 +41,7 @@ export default class LikeDislike extends Component {
         }
     }
   }
-  
+
   dislike = () => {
     if(this.state.isLike){
       this.setState({
@@ -62,16 +62,16 @@ export default class LikeDislike extends Component {
       });
     }
   }
-  
+
   render() {
-	let likeBtnClass = cx({
-		'like-button': true,
-		liked: this.state.isLike
+    let likeBtnClass = cx({
+        'like-button': true,
+        liked: this.state.isLike
     });
 
     let dislikeBtnClass = cx({
-		'dislike-button': true,
-		disliked: this.state.isDislike
+        'dislike-button': true,
+        disliked: this.state.isDislike
     });
 
     return (
@@ -107,40 +107,40 @@ import cx from 'classnames';
 import { Component } from 'react';
 
 export default class Counter extends Component {
-	constructor(props){
-    	super(props);
-    	this.state = {
-        	coun:42
-    	}
-	}
-    
-	add = () => {
-    	this.setState({
-        	coun : this.state.coun + 1
-    	})
-	}
-    
-	render() {
-    	return (
-        	<div>
+    constructor(props){
+        super(props);
+        this.state = {
+            coun:42
+        }
+    }
+
+    add = () => {
+        this.setState({
+            coun : this.state.coun + 1
+        })
+    }
+
+    render() {
+        return (
+            <div>
                 <h2 className = "counter">{this.state.coun}</h2>
                 <button className ="counter-button" onClick={this.add}>Click</button>
-            	<style>{`
-                	.counter-button {
-                    	font-size: 1rem;
-                    	padding: 5px 10px;
-                    	color:  #585858;
-                	}
-            	`}</style>
-        	</div>
-    	);
-	}
+                <style>{`
+                    .counter-button {
+                        font-size: 1rem;
+                        padding: 5px 10px;
+                        color:  #585858;
+                    }
+                `}</style>
+            </div>
+        );
+    }
 }
 ```
 
 ## Walmart Checkout Component
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](https://github.com/yao2007/study-node/tree/3c6d34232e6101eff8213fdac978957736ea079c/.gitbook/assets/image%20%281%29.png)
 
 > [https://codesandbox.io/s/0qqwjkryq0](https://codesandbox.io/s/0qqwjkryq0)
 
@@ -150,17 +150,15 @@ export default class Counter extends Component {
 
 > [https://github.com/wenjun9/Menu](https://github.com/wenjun9/Menu)
 
-## Quiz Reducer Problem 
+## Quiz Reducer Problem
 
-When this form is submitted, you should render additional text at the top of the page that says "You selected: the text for the answer they selected" and below that, the other potential answers each with the number of times each was selected by other users next to it \(which is found the "responses" attribute in the Json\). 
+When this form is submitted, you should render additional text at the top of the page that says "You selected: the text for the answer they selected" and below that, the other potential answers each with the number of times each was selected by other users next to it \(which is found the "responses" attribute in the Json\).
 
-1. Fork this fiddle: [https://jsfiddle.net/ebayfred/n431oxwz/](https://jsfiddle.net/ebayfred/n431oxwz/) 
+1. Fork this fiddle: [https://jsfiddle.net/ebayfred/n431oxwz/](https://jsfiddle.net/ebayfred/n431oxwz/)
+2. Change the JavaScript, HTML, and CSS panels to solve the problem \(as described in the summary, preferably with React templates\)
+3. As part of the solution, implement the questionReducer. It’s a standard Redux reducer that takes a state and action and returns a new state.
 
-2. Change the JavaScript, HTML, and CSS panels to solve the problem \(as described in the summary, preferably with React templates\) 
-
-3. As part of the solution, implement the questionReducer. It’s a standard Redux reducer that takes a state and action and returns a new state. 
-
-a. The state is the questions part of the last challenge. 
+a. The state is the questions part of the last challenge.
 
 b. The action is dispatched when someone picks an answer to a question. It contains both the question ID and answer ID. The matching question/answer’s responses should be incremented.
 
@@ -466,7 +464,7 @@ class Products extends React.Component {
       name: evt.target.name,
       value: evt.target.value
     };
-    
+
   var products = this.state.products.slice();
   var newProducts = products.map(function(product) {
 
@@ -650,6 +648,4 @@ class App extends React.Component {
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
-
-
 

@@ -284,7 +284,7 @@ function isPalindrome(str) {
 
 ## Leetcode 139: Work Break
 
-## Leetcode 144: Binary Tree Preorder Traversal 
+## Leetcode 144: Binary Tree Preorder Traversal
 
 ```javascript
 // Binary Tree Pre-order Traversal: (root, left, right)

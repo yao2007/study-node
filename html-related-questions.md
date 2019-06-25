@@ -16,7 +16,7 @@ HyperText Markup Language \(HTML\) is the standard markup language for creating 
 
 ## Attribute vs Property
 
-Attributes are defined on the HTML markup but properties are defined on the DOM. 
+Attributes are defined on the HTML markup but properties are defined on the DOM.
 
 ## Cookie vs SessionStorage vs LocalStorage
 
@@ -31,11 +31,11 @@ All the above-mentioned technologies are key-value storage mechanisms on the cli
 | Capacity | 4kb | 5mb | 5mb |
 | Accessibility | any window | any window | same tab |
 
-## Form Validation 
+## Form Validation
 
-HTML5 introduced a new HTML validation concept called constraint validation. 
+HTML5 introduced a new HTML validation concept called constraint validation.
 
-HTML constraint validation is based on: 
+HTML constraint validation is based on:
 
 * HTML Input Attributes - e.g. disabled, max, required
 * CSS Pseudo Selectors - e.g :disabled, :valid, :required
@@ -43,7 +43,7 @@ HTML constraint validation is based on:
 
 ## HTML data-\* attribute
 
-The data attributes are used to store custom data private to the page or application. The data attributes give us the ability to embed custom data attributes on all HTML elements. The stored data can then be used in the page's JavaScript to create a more engaging user experience \(without any AJAX calls or sever-side database queries\). 
+The data attributes are used to store custom data private to the page or application. The data attributes give us the ability to embed custom data attributes on all HTML elements. The stored data can then be used in the page's JavaScript to create a more engaging user experience \(without any AJAX calls or sever-side database queries\).
 
 The data attributes consist of two parts:
 
@@ -65,6 +65,4 @@ The aside element represents a portion of the document whose content is only ind
 * Alternative text
 * Declare the language and use clear language
 * Write good links and link titles
-
-## 
 
